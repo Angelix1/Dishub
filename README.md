@@ -35,11 +35,11 @@ DH.RE(message, 'Content of the message you wanted to send')
 ```
 Basically Console.log()
 ```
-LOG('Content of the message you wanted to send')
+DH.LOG('Content of the message you wanted to send')
 ```
 
 # WIP
 In line Reply ( If error, Don't Use it, I still trying to figure it out, since Inline reply are not in Discord.js V12 )
 ```
-Lreply(message, 'Content of the message you wanted to send')
+DH.Lreply(message, 'Content of the message you wanted to send')
 ```
