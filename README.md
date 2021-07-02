@@ -8,15 +8,15 @@ A Quality of Life Discord Package
 
 # Usage
 
-```
+```js
 let Discord = require("discord.js");
 let client = new Discord.Client();
-let DH = require('dishub')
+let { Say , Re, LOG, Lreply } = require('dishub')
 
 client.on("message", message => {
 
 if (message.content === "ping") {
-DH.Say(message, "pong!")
+Say(message, "pong!")
 }
 
 })
@@ -26,20 +26,20 @@ client.login("YOUR TOKEN HERE")
 
 # Available Options
 Send as normal message
-```
-DH.Say(message, 'Content of the message you wanted to send')
+```js
+Say(message, 'Content of the message you wanted to send')
 ```
 Send message with Mention reply
-```
-DH.RE(message, 'Content of the message you wanted to send')
+```js
+RE(message, 'Content of the message you wanted to send')
 ```
 Basically Console.log()
-```
-DH.LOG('Content of the message you wanted to send')
+```js
+LOG('Content of the message you wanted to send')
 ```
 
 # WIP
 In line Reply ( If error, Don't Use it, I still trying to figure it out, since Inline reply are not in Discord.js V12 )
-```
-DH.Lreply(message, 'Content of the message you wanted to send')
+```js
+Lreply(message, 'Content of the message you wanted to send')
 ```
