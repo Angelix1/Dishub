@@ -31,7 +31,7 @@ Say(message, 'Content of the message you wanted to send')
 ```
 Send message with Mention reply
 ```js
-RE(message, 'Content of the message you wanted to send')
+Re(message, 'Content of the message you wanted to send')
 ```
 Basically Console.log()
 ```js
