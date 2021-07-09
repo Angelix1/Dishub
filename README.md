@@ -36,10 +36,10 @@ if(message.content === 'edit')
       message.channel.send("hi")
       .then(x => 
       {
-          edit(x, "hehehe", 3000)
-          edit(x, "lol", 5000)
-          edit(x, "xd", 7000)
-          edit(x, "bruh", 9000)
+          Edit(x, "hehehe", 3000)
+          Edit(x, "lol", 5000)
+          Edit(x, "xd", 7000)
+          Edit(x, "bruh", 9000)
       })
   }
 
