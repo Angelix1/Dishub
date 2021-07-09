@@ -59,9 +59,8 @@ Say(msg, "pong!")
 ```
 3. `"pong!"` or content of thing you wanted to send. It Self-Explanatory.
 # Available Options
-Send as normal message
-
 # Say
+Send as normal message
 ![Code](https://cdn.discordapp.com/attachments/860798919311360030/860799177306931200/unknown.png)
 ![Output](https://cdn.discordapp.com/attachments/860798919311360030/860799307871813642/unknown.png)
 ```js
