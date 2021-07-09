@@ -41,7 +41,8 @@ if(message.content === 'edit')
           Edit(x, "xd", 7000)
           Edit(x, "bruh", 9000)
       })
-  }
+}
+
 
 })
 
@@ -61,6 +62,7 @@ Say(msg, "pong!")
 # Available Options
 # Say
 Send as normal message
+
 ![Code](https://cdn.discordapp.com/attachments/860798919311360030/860799177306931200/unknown.png)
 ![Output](https://cdn.discordapp.com/attachments/860798919311360030/860799307871813642/unknown.png)
 ```js
@@ -96,9 +98,10 @@ Lreply(message, 'Content of the message you wanted to send')
 `Edit` function for simplify on editing message using `setTimeout`
 
 ![Code](https://cdn.discordapp.com/attachments/828007782221479946/863120884416118834/unknown.png)
-`message` = The message that will be edited
-`content` = The content of next message or message tht will be replace to
-`time` = Time to wait till next edits
+
+1. `message` = The message that will be edited.
+2. `content` = The content of next message or message tht will be replace to.
+3. `time` = Time to wait till next edits.
 
 ```js
 Edit(message, content, time[ miliseconds ])
