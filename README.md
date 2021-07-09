@@ -49,12 +49,13 @@ Say(msg, "pong!")
 # Available Options
 Send as normal message
 
+# Say
 ![Code](https://cdn.discordapp.com/attachments/860798919311360030/860799177306931200/unknown.png)
 ![Output](https://cdn.discordapp.com/attachments/860798919311360030/860799307871813642/unknown.png)
 ```js
 Say(message, 'Content of the message you wanted to send')
 ```
-
+# Re
 Send message with Mention reply
 
 ![Code](https://cdn.discordapp.com/attachments/860798919311360030/860799441501421588/unknown.png)
@@ -62,6 +63,7 @@ Send message with Mention reply
 ```js
 Re(message, 'Content of the message you wanted to send')
 ```
+# LOG
 Basically Console.log()
 
 ![Code](https://cdn.discordapp.com/attachments/860798919311360030/860800271247605790/unknown.png)
@@ -70,11 +72,23 @@ Basically Console.log()
 LOG('Content of the message you wanted to send')
 ```
 
-# WIP (Inline Reply)
-In line Reply ( If error, Don't Use it, I still trying to figure it out, since Inline reply are not in Discord.js V12 )
+# Inline Reply
+Sends Message in Form of inline Reply
 
 ![Code](https://cdn.discordapp.com/attachments/860798919311360030/860800434389123102/unknown.png)
 ![Output](https://cdn.discordapp.com/attachments/860798919311360030/860800506179354634/unknown.png)
 ```js
 Lreply(message, 'Content of the message you wanted to send')
+```
+
+# Edit
+`Edit` function for simplify on editing message using `setTimeout`
+
+![Code](https://cdn.discordapp.com/attachments/828007782221479946/863120884416118834/unknown.png)
+`message` = The message that will be edited
+`content` = The content of next message or message tht will be replace to
+`time` = Time to wait till next edits
+
+```js
+Edit(message, content, time[ miliseconds ])
 ```
