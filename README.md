@@ -11,7 +11,7 @@ A Quality of Life Discord Package
 ```js
 let Discord = require("discord.js");
 let client = new Discord.Client();
-let { Say , Re, LOG, Lreply } = require('dishub')
+let { Say , Re, LOG, Lreply, Edit } = require('dishub')
 
 client.on("message", message => {
 
@@ -30,6 +30,18 @@ LOG("pong!")
 if (message.content === "ping") {
 Lreply(message, "pong!")
 }
+
+if(message.content === 'edit')
+{
+      message.channel.send("hi")
+      .then(x => 
+      {
+          edit(x, "hehehe", 3000)
+          edit(x, "lol", 5000)
+          edit(x, "xd", 7000)
+          edit(x, "bruh", 9000)
+      })
+  }
 
 })
 
