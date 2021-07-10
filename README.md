@@ -11,7 +11,7 @@ A Quality of Life Discord Package
 ```js
 let Discord = require("discord.js");
 let client = new Discord.Client();
-let { Say , Re, LOG, Lreply, Edit } = require('dishub')
+let { Say , Re, LOG, Lreply, Edit, Delete } = require('dishub')
 
 client.on("message", message => {
 
@@ -42,6 +42,12 @@ if(message.content === 'edit')
           Edit(x, "bruh", 9000)
       })
 }
+
+if (message.content === "ping") 
+{
+	Delete(message, "1","pong!", 10000)
+}
+
 
 
 })
@@ -85,7 +91,7 @@ Basically Console.log()
 LOG('Content of the message you wanted to send')
 ```
 
-# Inline Reply
+# Lreply
 Sends Message in Form of inline Reply
 
 ![Code](https://cdn.discordapp.com/attachments/860798919311360030/860800434389123102/unknown.png)
@@ -106,3 +112,17 @@ Lreply(message, 'Content of the message you wanted to send')
 ```js
 Edit(message, content, time[ miliseconds ])
 ```
+# Delete
+`Delete` function for simplify on deleting a message after sometime
+
+![Code](https://cdn.discordapp.com/attachments/860798919311360030/863509367155327006/unknown.png)
+
+```js
+Delete(message, Option, Content, time[ miliseconds ])
+```
+1. `message` = The message that will be edited.
+2. `Option` `["1", "2", "3", "4"]` = `1` Normal, `2` Reply with mention, `3` lineReply with mention, `4` lineReply Without Mention
+2. `content` = The content of next message or message tht will be send.
+3. `time` = Time to wait till deletes happen.
+
+
