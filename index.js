@@ -106,23 +106,23 @@ function Edit(msg, content, time)
 
 function Delete(message, option, content, time)
 {
-	if(option !== undefined && option === "1")
+	if(option !== undefined && option === 1)
 	{
 		message.channel.send(content).then(m => m.delete({timeout:time}))
 	}
-	else if(option !== undefined && option === "2")
+	else if(option !== undefined && option === 2)
 	{
 		message.reply(content).then(m => m.delete({timeout:time}))
 	}
-	else if(option !== undefined && option === "3")
+	else if(option !== undefined && option === 3)
 	{
 		message.lineReply(content).then(m => m.delete({timeout:time}))
 	}
-	else if(option !== undefined && option === "4")
+	else if(option !== undefined && option === 4)
 	{
 		message.lineReplyNoMention(content).then(m => m.delete({timeout:time}))
 	}
-	else if(option !== undefined && (option !== "1" || option !== "2" || option !== "3" || option !== "4")) return message.channel.send('Not Valid Option On `Delete Function`\n<Option : { 1, 2, 3, 4}>\n`1: Normal`\n`2: Reply with mention`\n`3: lineReply with mention`\n`4: lineReply Without Mention`')
+	else if(option !== undefined && (option !== 1 || option !== 2 || option !== 3 || option !== 4)) return message.channel.send('Not Valid Option On `Delete Function`\n<Option : { 1, 2, 3, 4}>\n`1: Normal`\n`2: Reply with mention`\n`3: lineReply with mention`\n`4: lineReply Without Mention`')
 	if(option === undefined) return
 }
 
