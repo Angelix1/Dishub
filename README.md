@@ -45,7 +45,7 @@ if(message.content === 'edit')
 
 if (message.content === "ping") 
 {
-	Delete(message, "1","pong!", 10000)
+	Delete(message, 1,"pong!", 10000)
 }
 
 
@@ -115,13 +115,12 @@ Edit(message, content, time[ miliseconds ])
 # Delete
 `Delete` function for simplify on deleting a message after sometime
 
-![Code](https://cdn.discordapp.com/attachments/860798919311360030/863509367155327006/unknown.png)
-
 ```js
+Delete(message, 1, "hi", 2000) // sends "hi" as normal message and delete after 2 sec
 Delete(message, Option, Content, time[ miliseconds ])
 ```
-1. `message` = The message that will be edited.
-2. `Option` `["1", "2", "3", "4"]` = `1` Normal, `2` Reply with mention, `3` lineReply with mention, `4` lineReply Without Mention
+1. `message` = The message that will be deleted.
+2. `Option` `[1, 2, 3, 4]` = `1` Normal, `2` Reply with mention, `3` lineReply with mention, `4` lineReply Without Mention
 2. `content` = The content of next message or message tht will be send.
 3. `time` = Time to wait till deletes happen.
 
