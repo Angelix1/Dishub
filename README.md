@@ -120,7 +120,7 @@ Delete(message, 1, "hi", 2000) // sends "hi" as normal message and delete after 
 Delete(message, Option, Content, time[ miliseconds ])
 ```
 1. `message` = The message that will be deleted.
-2. `Option` `[1, 2, 3, 4]` = `1` Normal, `2` Reply with mention, `3` lineReply with mention, `4` lineReply Without Mention
+2. `Option` `[1, 2, 3, 4]` = `1` Normal, `2` Reply with mention, `3` lineReply With Mention, `4` lineReply Without Mention
 2. `content` = The content of next message or message tht will be send.
 3. `time` = Time to wait till deletes happen.
 
