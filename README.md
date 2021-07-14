@@ -115,6 +115,8 @@ Edit(message, content, time[ miliseconds ])
 # Delete
 `Delete` function for simplify on deleting a message after sometime
 
+![Code](https://cdn.discordapp.com/attachments/860798919311360030/864945481858678804/unknown.png)
+
 ```js
 Delete(message, 1, "hi", 2000) // sends "hi" as normal message and delete after 2 sec
 Delete(message, Option, Content, time[ miliseconds ])
